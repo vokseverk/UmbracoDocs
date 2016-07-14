@@ -95,10 +95,11 @@ Another example might be if a property editor stores a JSON value, it might supp
 strongly typed model such as, or at the very least the JSON would be convertable to a `JObject` instance, for example:
 
  	@(Model.Content.GetPropertyValue<NestedContentModel>("nestedContent"))
-		 
+	 
  or
  
  	@(Model.Content.GetPropertyValue<JObject>("nestedContent"))
+
 ---
 
 ##Property Methods
@@ -108,7 +109,7 @@ strongly typed model such as, or at the very least the JSON would be convertable
 Returns a boolean value representing if the IPublishedContent has a property with the specified alias.
 
 ###.HasValue(string propertyAlias)
-Retruns a boolean value representing if the IPublishedContent property has had a value set.
+Returns a boolean value representing if the IPublishedContent property has had a value set.
 
 ###.IsNull(string propertyAlias)
 Returns a boolean value representing if the IPublishedContent property is Null.
