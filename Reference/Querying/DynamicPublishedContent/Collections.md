@@ -110,7 +110,7 @@ For more details on queries and conditions, see the section below
 	
 	@var HomePage = CurrentPage.Where("NodeTypeAlias == @0 && Level == @1 || Name = @2", "HomePage", 0, "Home").First();
 
-###.OrderBy("fieldname [desc][,propertyAlias")
+###.OrderBy("fieldname [desc][,propertyAlias [desc]]")
 Orders a collection by a field name
 	
 	@* order by name *@
